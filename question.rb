@@ -1,4 +1,4 @@
-require "./player.rb"
+#require "./player.rb"
 
 class Questions
     attr_accessor :current_player

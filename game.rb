@@ -1,5 +1,5 @@
-require "./question.rb"
-require "./player.rb"
+#require "./question.rb"
+#require "./player.rb"
 class Game
 
     def initialize 
@@ -40,5 +40,5 @@ end
 
 end
 
-new_Game_instance = Game.new()
-new_Game_instance.starting_game
+#new_Game_instance = Game.new()
+#new_Game_instance.starting_game
