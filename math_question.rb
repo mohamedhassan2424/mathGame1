@@ -1,4 +1,4 @@
-class mathQuestion
+class Questions
     attr_accessor :player_turn
     def initialize(player_turn)
       @player_turn = player_turn
@@ -6,6 +6,16 @@ class mathQuestion
     def creating_question
         first_random_number = rand(1..9)
         secound_random_number = rand(1..9)
-        puts "What does #{first_random_number} plus #{secound_random_number}"
+        puts "Player#{@player_turn} :What does #{first_random_number} plus #{secound_random_number}"
+        answer = gets.chomp.to_i
+        puts "The answer you typed is #{answer}"
+        if answer == first_random_number+ secound_random_number
+           return puts "Your answer is right"
+    else 
+        return puts "Your answer is Wrong"
+    end
 end
-newPerson = mathQuestion.new("#{new_name}")
+
+end
+firstMathQuestion = Questions.new(1)
+firstMathQuestion.creating_question
